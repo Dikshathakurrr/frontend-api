@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22BCS13011</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>BFHL API Frontend</h2>
+        
+        <!-- JSON Input Field -->
+        <textarea id="jsonInput" placeholder='Enter JSON: {"data": ["A", "B", "3"]}'></textarea>
+        <button onclick="submitData()">Submit</button>
+        
+        <!-- Dropdown for Filtering -->
+        <label for="filter">Select Data to Display:</label>
+        <select id="filter" multiple>
+            <option value="alphabets">Alphabets</option>
+            <option value="numbers">Numbers</option>
+            <option value="highest_alphabet">Highest Alphabet</option>
+        </select>
+
+        <!-- Display API Response -->
+        <h3>Response:</h3>
+        <pre id="responseOutput"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
